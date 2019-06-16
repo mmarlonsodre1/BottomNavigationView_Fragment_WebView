@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_editor_absoluteX="0dp"
+    app:layout_editor_absoluteY="43dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:titleTextColor="@color/colorAccent"
+                android:layout_weight="1"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/colorAccent"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    android:layout_gravity="center"
+                    android:id="@+id/toolbar_title"/>
+            </android.support.v7.widget.Toolbar>
+            <android.support.design.internal.BaselineLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_height="1dp"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <TableLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5555"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+
+        <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+            app:itemTextColor="@color/colorAccent"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:id="@+id/navBotton"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            app:menu="@menu/nav_botton">
+        </android.support.design.widget.BottomNavigationView>
+
+    </LinearLayout>
+</TableLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navCardapio"
+        android:title="Cardápio"
+        android:icon="@drawable/ic_cardapio"/>
+
+    <item
+        android:id="@+id/navYoutube"
+        android:title="Youtube"
+        android:icon="@drawable/ic_video"/>
+
+</menu>
